@@ -74,7 +74,8 @@ public class MyBatisExample {
     	SqlSession sqlss = sessionfact.openSession();
         ClienteMapper cm=sqlss.getMapper(ClienteMapper.class);
         ItemMapper cn=sqlss.getMapper(ItemMapper.class);
-        System.out.println(cm.consultarClientes());
+        //System.out.println(cm.consultarClientes());
+        System.out.println(cm.consultarCliente(4));
         sqlss.commit();
         
         
